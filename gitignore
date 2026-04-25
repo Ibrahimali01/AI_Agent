@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.zip
+agent_knowledge.json
+*.log
+

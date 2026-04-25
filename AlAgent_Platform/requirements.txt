@@ -1,0 +1,6 @@
+# Required packages for AlAgent Platform
+# Add your dependencies here, e.g.:
+# numpy
+# pandas
+# torch
+# tensorflow

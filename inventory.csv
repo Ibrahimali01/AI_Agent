@@ -1,0 +1,11 @@
+ID,Name,Category,Quantity,Price,Supplier,Last Updated
+1,Laptop,Electronics,10,999.99,Dell,2023-10-01
+2,Mouse,Electronics,50,19.99,Logitech,2023-10-02
+3,Desk,Furniture,5,150.0,IKEA,2023-09-15
+4,Chair,Furniture,8,120.0,IKEA,2023-09-20
+5,Notebook,Stationery,100,2.5,Moleskine,2023-10-05
+6,Pen,Stationery,200,1.0,Bic,2023-10-05
+7,Printer,Electronics,3,249.99,HP,2023-08-30
+8,Paper A4,Stationery,500,5.0,Local,2023-10-06
+9,Monitor,Electronics,7,199.99,Samsung,2023-09-28
+10,Keyboard,Electronics,25,49.99,Corsair,2023-10-03

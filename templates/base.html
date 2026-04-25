@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}موقع التواصل الزجاجي{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis<caret>apis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-container">
+        <header class="glass-header">
+            <h1>🔮 زجاج سوشيال</h1>
+            <nav>
+                {% if session.user_id %}
+                    <a href="{{ url_for('feed') }}" class="glass-btn">الرئيسية</a>
+                    <a href="{{ url_for('logout') }}" class="glass-btn">تسجيل الخروج</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}" class="glass-btn">تسجيل الدخول</a>
+                    <a href="{{ url_for('register') }}" class="glass-btn">إنشاء حساب</a>
+                {% endif %}
+            </nav>
+        </header>
+        <main class="glass-main">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="flash-messages">
+                    {% for message in messages %}
+                        <div class="glass-alert">{{ message }}</div>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+            {% block content %}{% endblock %}
+        </main>
+        <footer class="glass-footer">
+            <p>تصميم زجاجي (Glassmorphism) © 2023</p>
+        </footer>
+    </div>
+</body>
+</html>

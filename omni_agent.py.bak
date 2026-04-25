@@ -1,0 +1,57 @@
+import os
+import requests
+import json
+from dotenv import load_dotenv
+
+# 1. إعداد البيئة ومفتاح الـ API
+load_dotenv()
+# سحب المفتاح من .env أو استخدام المفتاح الاحتياطي (تأكد من إغلاق القوس وعلامة التنصيص)
+API_KEY = os.getenv("OPENROUTER_API_KEY") or "sk-or-v1-b70d0d42d0547df181065b3f1"
+
+class OmniAgent:
+    def __init__(self):
+        self.base_url = "https://openrouter.ai/api/v1"
+        self.headers = {
+            "Authorization": f"Bearer {API_KEY}",
+            "HTTP-Referer": "http://localhost:3000",
+            "Content-Type": "application/json"
+        }
+        self.model = None
+        # تشغيل البحث التلقائي بمجرد تشغيل المحرك
+        self.auto_discover_models()
+
+    def auto_discover_models(self):
+        """يبحث عن أي موديل متاح حالياً دون تحديد شركة"""
+        print("[*] جاري مسح كافة الموديلات المتاحة في OpenRouter...")
+        try:
+            res = requests.get(f"{self.base_url}/models", headers=self.headers)
+            data = res.json().get('data', [])
+            # اختيار أول موديل مجاني متاح
+            free_models = [m['id'] for m in data if 'free' in m['id']]
+            if free_models:
+                self.model = free_models[0]
+                print(f"[+] تم اختيار موديل متاح تلقائياً: {self.model}")
+            else:
+                self.model = data[0]['id'] if data else "google/gemini-2.0-flash-exp:free"
+                print(f"[+] تم اختيار موديل من القائمة العامة: {self.model}")
+        except Exception as e:
+            print(f"[-] فشل البحث التلقائي، استخدام الافتراضي: {e}")
+            self.model = "google/gemini-2.0-flash-exp:free"
+
+    def ask_ai(self, prompt):
+        """الدالة التي يستدعيها core/agent.py"""
+        url = f"{self.base_url}/chat/completions"
+        payload = {
+            "model": self.model,
+            "messages": [{"role": "user", "content": prompt}]
+        }
+        try:
+            response = requests.post(url, headers=self.headers, json=payload)
+            res_json = response.json()
+            if 'choices' in res_json:
+                return res_json['choices'][0]['message']['content']
+            else:
+                return f"خطأ API: {res_json.get('error', {}).get('message', 'رد غير متوقع')}"
+        except Exception as e:
+            return f"Error: {str(e)}"
+

@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+{% block title %}الرئيسية{% endblock %}
+{% block content %}
+<div class="glass-card welcome-card">
+    <h2>مرحباً بك في موقع التواصل الزجاجي</h2>
+    <p>أول منصة تواصل اجتماعي بتصميم زجاجي عالمي</p>
+    {% if not session.user_id %}
+        <div class="cta-buttons">
+            <a href="{{ url_for('register') }}" class="glass-btn big">إنشاء حساب</a>
+            <a href="{{ url_for('login') }}" class="glass-btn big secondary">تسجيل الدخول</a>
+        </div>
+    {% else %}
+        <a href="{{ url_for('feed') }}" class="glass-btn big">اذهب إلى الصفحة الرئيسية</a>
+    {% endif %}
+</div>
+{% endblock %}

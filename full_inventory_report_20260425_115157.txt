@@ -1,0 +1,48 @@
+============================================================
+                   FULL INVENTORY REPORT                    
+============================================================
+Generated on: 2026-04-25 11:51:57
+
+SUMMARY:
+Total unique items: 10
+Total quantity in stock: 0
+Total inventory value: $0.00
+Low stock items (<10): 10
+
+CATEGORY BREAKDOWN:
+  Uncategorized: 10 item(s)
+
+LOW STOCK ITEMS (quantity < 10):
+  - Unknown (ID: ?): 0 units
+  - Unknown (ID: ?): 0 units
+  - Unknown (ID: ?): 0 units
+  - Unknown (ID: ?): 0 units
+  - Unknown (ID: ?): 0 units
+  - Unknown (ID: ?): 0 units
+  - Unknown (ID: ?): 0 units
+  - Unknown (ID: ?): 0 units
+  - Unknown (ID: ?): 0 units
+  - Unknown (ID: ?): 0 units
+
+TOP 5 ITEMS BY TOTAL VALUE:
+  1. Unknown: $0.00 (0 x $0.00)
+  2. Unknown: $0.00 (0 x $0.00)
+  3. Unknown: $0.00 (0 x $0.00)
+  4. Unknown: $0.00 (0 x $0.00)
+  5. Unknown: $0.00 (0 x $0.00)
+
+FULL INVENTORY LIST:
+------------------------------------------------------------
+ID    Name                 Category        Qty      Price      Value        Last Updated   
+------------------------------------------------------------
+?     Unknown              ?               0        $0.00      $0.00        ?              
+?     Unknown              ?               0        $0.00      $0.00        ?              
+?     Unknown              ?               0        $0.00      $0.00        ?              
+?     Unknown              ?               0        $0.00      $0.00        ?              
+?     Unknown              ?               0        $0.00      $0.00        ?              
+?     Unknown              ?               0        $0.00      $0.00        ?              
+?     Unknown              ?               0        $0.00      $0.00        ?              
+?     Unknown              ?               0        $0.00      $0.00        ?              
+?     Unknown              ?               0        $0.00      $0.00        ?              
+?     Unknown              ?               0        $0.00      $0.00        ?              
+============================================================
