@@ -1,0 +1,6 @@
+Confirmation: data/brain.json exists and contains data.
+Content: {
+  "name": "brain",
+  "version": 1.0,
+  "content": "This is brain data."
+}

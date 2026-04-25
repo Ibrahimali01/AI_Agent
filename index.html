@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع فيسبوك مصغر</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <i class="fab fa-facebook"></i>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="ابحث في فيسبوك">
+            </div>
+        </div>
+        <div class="nav-center">
+            <a href="#" class="nav-icon active"><i class="fas fa-home"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-flag"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-tv"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-users"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-gamepad"></i></a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-icon"><i class="fas fa-user-circle"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-bell"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-cog"></i></a>
+        </div>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="container">
+        <!-- الشريط الجانبي الأيسر -->
+        <aside class="sidebar left-sidebar">
+            <div class="sidebar-item active">
+                <i class="fas fa-user-circle"></i>
+                <span>المستخدم</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-users"></i>
+                <span>الأصدقاء</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-clock"></i>
+                <span>الذكريات</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-bookmark"></i>
+                <span>المحفوظات</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-group"></i>
+                <span>المجموعات</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-video"></i>
+                <span>الفيديوهات</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-store"></i>
+                <span>السوق</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>الأحداث</span>
+            </div>
+        </aside>
+
+        <!-- منطقة المنشورات -->
+        <main class="main-content">
+            <!-- صندوق إنشاء منشور -->
+            <div class="create-post">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/40" alt="صورة المستخدم">
+                    <input type="text" placeholder="ماذا يدور في خاطرك؟">
+                </div>
+                <div class="post-options">
+                    <div class="option"><i class="fas fa-video" style="color:red;"></i> فيديو مباشر</div>
+                    <div class="option"><i class="fas fa-images" style="color:green;"></i> صورة/فيديو</div>
+                    <div class="option"><i class="fas fa-smile" style="color:orange;"></i> شعور/نشاط</div>
+                </div>
+            </div>
+
+            <!-- منشور -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="https://via.placeholder.com/40" alt="صورة المؤلف">
+                    <div class="author-info">
+                        <h4>أحمد محمد</h4>
+                        <p>منذ ساعة · <i class="fas fa-globe-americas"></i></p>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="post-content">
+                    <p>هذا منشور تجريبي على موقع فيسبوك المصغر. يمكنك إضافة صور وفيديوهات هنا.</p>
+                    <img src="https://via.placeholder.com/500x300" alt="منشور صورة">
+                </div>
+                <div class="post-stats">
+                    <div class="likes"><i class="fas fa-thumbs-up"></i> 120</div>
+                    <div class="comments-shares">10 تعليقات · 5 مشاركات</div>
+                </div>
+                <div class="post-actions">
+                    <div class="action"><i class="fas fa-thumbs-up"></i> إعجاب</div>
+                    <div class="action"><i class="fas fa-comment"></i> تعليق</div>
+                    <div class="action"><i class="fas fa-share"></i> مشاركة</div>
+                </div>
+            </div>
+
+            <!-- منشور آخر -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="https://via.placeholder.com/40" alt="صورة المؤلف">
+                    <div class="author-info">
+                        <h4>سارة علي</h4>
+                        <p>منذ 3 ساعات · <i class="fas fa-users"></i></p>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="post-content">
+                    <p>يوم جميل مع الأصدقاء في الحديقة! 🌳☀️</p>
+                </div>
+                <div class="post-stats">
+                    <div class="likes"><i class="fas fa-thumbs-up"></i> 85</div>
+                    <div class="comments-shares">5 تعليقات · 2 مشاركات</div>
+                </div>
+                <div class="post-actions">
+                    <div class="action"><i class="fas fa-thumbs-up"></i> إعجاب</div>
+                    <div class="action"><i class="fas fa-comment"></i> تعليق</div>
+                    <div class="action"><i class="fas fa-share"></i> مشاركة</div>
+                </div>
+            </div>
+        </main>
+
+        <!-- الشريط الجانبي الأيمن -->
+        <aside class="sidebar right-sidebar">
+            <div class="sidebar-section">
+                <h3>جهات الاتصال</h3>
+                <div class="contact">
+                    <img src="https://via.placeholder.com/30" alt="">
+                    <span>محمد أحمد</span>
+                    <i class="fas fa-circle online"></i>
+                </div>
+                <div class="contact">
+                    <img src="https://via.placeholder.com/30" alt="">
+                    <span>ليلى سعيد</span>
+                    <i class="fas fa-circle online"></i>
+                </div>
+                <div class="contact">
+                    <img src="https://via.placeholder.com/30" alt="">
+                    <span>خالد محمود</span>
+                </div>
+                <div class="contact">
+                    <img src="https://via.placeholder.com/30" alt="">
+                    <span>نورا يوسف</span>
+                    <i class="fas fa-circle online"></i>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h3>المجموعات المقترحة</h3>
+                <div class="group">
+                    <img src="https://via.placeholder.com/30" alt="">
+                    <span>محبي البرمجة</span>
+                </div>
+                <div class="group">
+                    <img src="https://via.placeholder.com/30" alt="">
+                    <span>تصميم جرافيك</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

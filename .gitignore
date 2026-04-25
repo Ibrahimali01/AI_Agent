@@ -1,7 +1,21 @@
+# بايثون
 __pycache__/
-*.pyc
-.env
-.idea/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
 .vscode/
-*.log
+.idea/
+*.swp
+*.swo
+
+# نظام
 .DS_Store
+Thumbs.db

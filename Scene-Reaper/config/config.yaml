@@ -1,0 +1,7 @@
+scene_detection:
+  threshold: 0.3
+  min_scene_length: 1.0  # seconds
+  output_format: mp4
+logging:
+  level: INFO
+  file: ../logs/scene-reaper.log
