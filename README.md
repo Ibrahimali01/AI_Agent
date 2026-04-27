@@ -1,174 +1,421 @@
-[![Termux Compatible](https://img.shields.io/badge/Termux-Compatible-brightgreen?logo=termux)](https://termux.com)
-[![Python Version](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org)
-[![License](https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative)](LICENSE)
-[![Latest Release](https://img.shields.io/github/v/release/alAgent/alAgent?logo=github)](https://github.com/alAgent/alAgent/releases)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/alAgent/alAgent/ci.yml?logo=githubactions)](https://github.com/alAgent/alAgent/actions)
+# AI_Agent
 
-# 🤖 alAgent
-## Your Intelligent, Creative AI Assistant for Termux
+## 📋 نظرة عامة
+هذا المشروع يحتوي على مجموعة من الملفات والكودات التي تم تطويرها وتعلمها. تم تحليل المجلد الحالي وتحديث هذا الملف آلياً ليعكس أحدث التطورات.
 
-> A next-generation AI agent purpose-built for Termux environments, combining natural language understanding, autonomous task execution, and deep integration with Termux's CLI ecosystem to boost your productivity and unlock creative workflows.
+## 🎓 ما تم تعلمه (Learned Concepts)
 
-## 📑 Table of Contents
-- [✨ Introduction](#-introduction)
-- [🚀 Key Features](#-key-features)
-- [📦 Installation](#-installation)
-  - [Prerequisites](#prerequisites)
-  - [Quick Install (Termux Only)](#quick-install-termux-only)
-  - [Manual Installation](#manual-installation)
-- [💡 Usage](#-usage)
-  - [Basic Commands](#basic-commands)
-  - [Advanced Workflows](#advanced-workflows)
-  - [Example Tasks](#example-tasks)
-- [⚙️ Configuration](#-configuration)
-  - [Environment Variables](#environment-variables)
-  - [Custom Agent Persona](#custom-agent-persona)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [📬 Support & Contact](#-support--contact)
+### لغات البرمجة المستخدمة:
+- CSS
+- HTML
+- JSON
+- JavaScript
+- Markdown
+- Python
+- Shell Scripting
 
-## ✨ Introduction
-alAgent is a lightweight, high-performance AI agent designed exclusively for Termux users. It bridges the gap between natural language intent and Termux's powerful command-line tools, allowing you to automate complex tasks, query system information, generate scripts, and even build custom workflows using simple conversational prompts.
+### الأطر والمكتبات (Frameworks & Libraries):
+- Flask
 
-Unlike generic AI chatbots, alAgent is deeply integrated with Termux's filesystem, package manager (pkg/apt), and environment variables, enabling it to execute actions directly on your device with proper permission handling and safety checks.
+### المواضيع والتقنيات:
+- APIs
+- Databases
+- Git
+- Image Processing
+- Maps/GIS
 
-## 🚀 Key Features
-| Feature | Description |
-|---------|-------------|
-| 🧠 **Conversational Task Execution** | Run Termux commands, install packages, and manage files using plain English prompts |
-| 🔄 **Autonomous Workflow Automation** | Chain multiple tasks into reusable workflows triggered by custom commands or events |
-| 📝 **Smart Script Generation** | Auto-generate Python, Bash, or JavaScript scripts tailored to your Termux environment |
-| 🔍 **Context-Aware Assistance** | Retains conversation context to handle multi-step queries without repetition |
-| 🛡️ **Safety-First Execution** | Validates all commands before execution, prompts for confirmation on high-risk actions |
-| 🎨 **Creative Content Generation** | Generate README files, documentation, code comments, or even ASCII art directly in Termux |
-| 🔌 **Extensible Plugin System** | Add custom tools, API integrations, or persona tweaks via a simple plugin architecture |
+## 📂 هيكل المجلد الحالي
 
-## 📦 Installation
-### Prerequisites
-- Termux (latest version, installed from F-Droid or official GitHub release)
-- Python 3.10 or higher
-- ~50MB free storage space
-- Active internet connection (for initial setup)
 
-### Quick Install (Termux Only)
-Run the following one-liner in your Termux terminal to install alAgent and all dependencies automatically:
-bash
-curl -fsSL https://raw.githubusercontent.com/alAgent/alAgent/main/install.sh | bash
+AI_Agent/
 
-This script will:
-1. Update Termux repositories
-2. Install required Python packages
-3. Configure alAgent environment variables
-4. Add the `alagent` command to your PATH
 
-### Manual Installation
-1. Update Termux packages:
-bash
-pkg update && pkg upgrade -y
+### ملفات الكود:
 
-2. Install Python and git:
-bash
-pkg install python git -y
+#### 📄 .intelligence_history.json
+- **الحجم**: 132 بايت
+- **عدد الأسطر**: 11
 
-3. Clone the alAgent repository:
-bash
-git clone https://github.com/alAgent/alAgent.git
+#### 📄 .tpa_protocol_state.json
+- **الحجم**: 4204 بايت
+- **عدد الأسطر**: 133
 
-4. Navigate to the project directory:
-bash
-cd alAgent
+#### 📄 CONTRIBUTING.md
+- **الحجم**: 563 بايت
+- **عدد الأسطر**: 16
+- **النوع**: ملف توثيق Markdown
 
-5. Install dependencies:
+#### 📄 EvolutionLog.txt
+- **الحجم**: 66 بايت
+- **عدد الأسطر**: 2
+
+#### 📄 README.md
+- **الحجم**: 7371 بايت
+- **عدد الأسطر**: 175
+- **النوع**: ملف توثيق Markdown
+
+#### 📄 agent_bridge.py
+- **الحجم**: 894 بايت
+- **عدد الأسطر**: 29
+- **النوع**: كود Python
+- **الكلاسات**: AgentBridge
+- **الدوال**: __init__, run_check
+
+#### 📄 agent_knowledge.json
+- **الحجم**: 2958 بايت
+- **عدد الأسطر**: 86
+
+#### 📄 app.py
+- **الحجم**: 1361 بايت
+- **عدد الأسطر**: 44
+- **النوع**: كود Python
+- **الدوال**: get_sys_info, index, background_thread, connect
+
+#### 📄 banner.html
+- **الحجم**: 274 بايت
+- **عدد الأسطر**: 17
+- **النوع**: ملف HTML
+
+#### 📄 code_pulse_log.json
+- **الحجم**: 157981 بايت
+
+#### 📄 config.json
+- **الحجم**: 174 بايت
+- **عدد الأسطر**: 10
+
+#### 📄 config.py
+- **الحجم**: 85 بايت
+- **عدد الأسطر**: 5
+- **النوع**: كود Python
+
+#### 📄 confirmation.txt
+- **الحجم**: 141 بايت
+- **عدد الأسطر**: 7
+
+#### 📄 data.txt
+- **الحجم**: 0 بايت
+- **عدد الأسطر**: 1
+
+#### 📄 development_scan_report.json
+- **الحجم**: 532 بايت
+- **عدد الأسطر**: 27
+
+#### 📄 donut_memory.json
+- **الحجم**: 1787 بايت
+- **عدد الأسطر**: 58
+
+#### 📄 file_manifest.txt
+- **الحجم**: 2188 بايت
+- **عدد الأسطر**: 72
+
+#### 📄 full_inventory_report_20260425_115157.txt
+- **الحجم**: 2110 بايت
+- **عدد الأسطر**: 48
+
+#### 📄 index.html
+- **الحجم**: 8023 بايت
+- **عدد الأسطر**: 178
+- **النوع**: ملف HTML
+
+#### 📄 intelligent_auto_exec.py
+- **الحجم**: 1408 بايت
+- **عدد الأسطر**: 58
+- **النوع**: كود Python
+- **الدوال**: auto_correct
+
+#### 📄 main.py
+- **الحجم**: 261 بايت
+- **عدد الأسطر**: 15
+- **النوع**: كود Python
+
+#### 📄 memory.json
+- **الحجم**: 391993 بايت
+
+#### 📄 omni_agent.py
+- **الحجم**: 4375 بايت
+- **عدد الأسطر**: 105
+- **النوع**: كود Python
+- **الكلاسات**: OmniAgent
+- **الدوال**: __init__, auto_discover_models, switch_model, ask_and_execute
+
+#### 📄 processed_files.json
+- **الحجم**: 652 بايت
+- **عدد الأسطر**: 8
+
+#### 📄 project_manifest.json
+- **الحجم**: 90 بايت
+- **عدد الأسطر**: 7
+
+#### 📄 requirements.txt
+- **الحجم**: 56 بايت
+- **عدد الأسطر**: 2
+
+#### 📄 revision_notes.txt
+- **الحجم**: 128 بايت
+- **عدد الأسطر**: 6
+
+#### 📄 run.py
+- **الحجم**: 929 بايت
+- **عدد الأسطر**: 35
+- **النوع**: كود Python
+- **الدوال**: main
+
+#### 📄 script.js
+- **الحجم**: 1474 بايت
+- **عدد الأسطر**: 34
+- **النوع**: كود JavaScript
+
+#### 📄 script.py
+- **الحجم**: 24 بايت
+- **عدد الأسطر**: 2
+- **النوع**: كود Python
+
+#### 📄 setup.py
+- **الحجم**: 234 بايت
+- **عدد الأسطر**: 11
+- **النوع**: كود Python
+
+#### 📄 setup_cli.sh
+- **الحجم**: 174 بايت
+- **عدد الأسطر**: 7
+
+#### 📄 smart_ai.py
+- **الحجم**: 2917 بايت
+- **عدد الأسطر**: 64
+- **النوع**: كود Python
+- **الدوال**: similarity, get_response, main
+
+#### 📄 sovereign_state.json
+- **الحجم**: 1459 بايت
+- **عدد الأسطر**: 53
+
+#### 📄 style.css
+- **الحجم**: 5401 بايت
+- **عدد الأسطر**: 330
+
+#### 📄 test.py
+- **الحجم**: 14 بايت
+- **عدد الأسطر**: 2
+- **النوع**: كود Python
+
+#### 📄 test_main.py
+- **الحجم**: 201 بايت
+- **عدد الأسطر**: 10
+- **النوع**: كود Python
+- **الكلاسات**: TestMain
+- **الدوال**: test_main
+
+#### 📄 tools.py
+- **الحجم**: 60 بايت
+- **عدد الأسطر**: 3
+- **النوع**: كود Python
+
+### ملفات أخرى:
+
+- 📎 **.autonomous_scholar_mode** (7 بايت)
+- 📎 **.env** (93 بايت)
+- 📎 **.gitignore** (165 بايت)
+- 📎 **6g_evolution.png** (38692 بايت)
+- 📎 **LICENSE** (1076 بايت)
+- 📎 **Makefile** (610 بايت)
+- 📎 **evolution_step2.log** (319 بايت)
+- 📎 **generated_image.png** (1952 بايت)
+- 📎 **gitignore** (52 بايت)
+- 📎 **global_linking.log** (424 بايت)
+- 📎 **inventory.csv** (529 بايت)
+- 📎 **model_change_event.log** (164 بايت)
+- 📎 **self_evolution.log** (681 بايت)
+- 📎 **social.db** (20480 بايت)
+- 📎 **system_tool.log** (0 بايت)
+
+## 🗺️ الخرائط والصور
+
+### الصور:
+- 🖼️ **6g_evolution.png** - 38692 بايت
+  ![صورة](6g_evolution.png)
+- 🖼️ **generated_image.png** - 1952 بايت
+  ![صورة](generated_image.png)
+
+## 🔄 التحديثات الأخيرة
+- تم تحليل المجلد الحالي وتحديث هذا الملف آلياً
+- إضافة وصف تفصيلي لجميع الملفات
+- تحديد التقنيات والمفاهيم المستخدمة
+
+## 🚀 كيفية الاستخدام
+1. استعراض الملفات حسب نوعها
+2. قراءة الكود المصدري لكل ملف
+3. الرجوع لهذا الملف للحصول على نظرة شاملة
+
+## 📝 ملاحظات
+- تم إنشاء هذا الملف تلقائياً بواسطة سكريبت Python
+- لإعادة تحديث الملف، قم بتشغيل السكريبت مرة أخرى
+- تم تحليل الملفات بناءً على محتواها وامتداداتها
+
+---
+*تم التحديث في: 2026-04-27 16:15:42*
+# Video Editor Pro - Professional Video Editing Tool
+
+## طرق التشغيل
+
+### التثبيت
 bash
 pip install -r requirements.txt
 
-6. Run the setup script:
+
+### التشغيل الأساسي
 bash
-python setup.py install --user
+python main.py
 
 
-## 💡 Usage
-### Basic Commands
-Start the alAgent interactive shell by running:
+### تشغيل الواجهة الرسومية
 bash
-alagent
-
-Once in the shell, you can use natural language prompts or shortcut commands:
-| Shortcut | Description |
-|----------|-------------|
-| `/help` | Display all available commands |
-| `/clear` | Clear conversation context |
-| `/exec <command>` | Directly execute a Termux command |
-| `/script <task>` | Generate a script for a specific task |
-| `/exit` | Quit alAgent |
-
-### Advanced Workflows
-alAgent supports workflow definitions stored in `~/.config/alagent/workflows/`. Create a JSON file like `backup-workflow.json`:
-json
-{
-  "name": "daily-backup",
-  "trigger": "backup my files",
-  "steps": [
-    "create backup directory in ~/backups",
-    "copy all files from ~/documents to backup directory",
-    "compress backup directory to tar.gz",
-    "notify me when done"
-  ]
-}
-
-Then trigger the workflow with: `alagent run backup-workflow`
-
-### Example Tasks
-<details>
-<summary>Click to see example prompts</summary>
-
-1. "Install the latest version of ffmpeg and show me how to convert an MP4 to GIF"
-2. "Generate a Python script that scans my Termux home directory for large files over 100MB"
-3. "Set up a cron job to update Termux packages every Sunday at 2AM"
-4. "Create a README.md for my new Python project in ~/my-project"
-5. "Show me all running processes and kill the ones using more than 500MB RAM"
-
-</details>
-
-## ⚙️ Configuration
-alAgent stores its configuration in `~/.config/alagent/config.yaml`. You can edit this file directly or use the `alagent config` command.
-
-### Environment Variables
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `ALAGENT_API_KEY` | None | Your AI provider API key (OpenAI, Anthropic, etc.) |
-| `ALAGENT_MODEL` | `gpt-3.5-turbo` | The AI model to use for processing prompts |
-| `ALAGENT_SAFE_MODE` | `true` | Enable/disable safety checks for command execution |
-| `ALAGENT_LOG_LEVEL` | `info` | Logging verbosity (debug, info, warn, error) |
-
-### Custom Agent Persona
-You can customize alAgent's tone and behavior by editing the `persona.yaml` file in the config directory. Example:
-yaml
-name: alAgent
-tone: professional
-expertise: Termux CLI, Python, Bash, Automation
-language: English
-creative_level: high
+python gui.py
 
 
-## 🤝 Contributing
-We welcome contributions from the community! To contribute:
-1. Fork the repository
-2. Create a new branch for your feature/bugfix: `git checkout -b feat/your-feature`
-3. Commit your changes with descriptive messages
-4. Push to your fork and open a Pull Request
-5. Follow the [Contribution Guidelines](CONTRIBUTING.md)
+### تشغيل من سطر الأوامر
+bash
+python cli.py --input video.mp4 --output output.mp4 --effect fade
 
-Please report bugs or request features via the [GitHub Issues](https://github.com/alAgent/alAgent/issues) page.
-
-## 📄 License
-alAgent is licensed under the MIT License. See the [LICENSE](LICENSE) file for full details.
-
-## 📬 Support & Contact
-- GitHub Issues: [Report a Bug](https://github.com/alAgent/alAgent/issues/new?template=bug_report.md)
-- Discussions: [Join the Community](https://github.com/alAgent/alAgent/discussions)
-- Email: support@alagent.io (for security-related queries only)
 
 ---
 
-> Built with ❤️ for the Termux community.
+## طرق الربط
+
+### الربط مع FFmpeg
+
+from video_editor import FFmpegConnector
+
+connector = FFmpegConnector()
+connector.link_ffmpeg(path="/usr/local/bin/ffmpeg")
+
+
+### الربط مع مكتبات Python
+
+from video_editor import LibraryLinker
+
+linker = LibraryLinker()
+linker.link_library("opencv")
+linker.link_library("moviepy")
+linker.link_library("pillow")
+
+
+### الربط مع APIs خارجية
+
+from video_editor import APIConnector
+
+api = APIConnector()
+api.connect("youtube", api_key="your_api_key")
+api.connect("dropbox", token="your_token")
+
+
+---
+
+## إنشاء فيديو احترافي
+
+### إضافة مؤثرات احترافية
+
+from video_editor import ProfessionalEffects
+
+effects = ProfessionalEffects()
+effects.add_transition("fade", duration=2)
+effects.add_text_overlay("Title", position="center", font="Arial", size=48)
+effects.add_color_correction(brightness=1.2, contrast=1.1)
+effects.add_blur(percentage=20)
+effects.add_chroma_key(green_screen=True)
+
+
+### إنشاء فيديو كامل احترافي
+
+from video_editor import ProfessionalVideoCreator
+
+creator = ProfessionalVideoCreator()
+
+# إضافة المقاطع
+creator.add_clip("clip1.mp4", start=0, end=10)
+creator.add_clip("clip2.mp4", start=5, end=15)
+
+# إضافة المؤثرات
+creator.add_effect("fade_in", duration=2)
+creator.add_effect("fade_out", duration=2)
+creator.add_effect("zoom", scale=1.5)
+
+# إضافة الصوت
+creator.add_audio("music.mp3", volume=0.5)
+creator.add_voiceover("voice.wav", start=5)
+
+# إضافة النصوص والعناوين
+creator.add_title("فيديو احترافي", font_size=72, color="white")
+creator.add_subtitle("النص هنا", position="bottom")
+
+# إضافة الشعارات
+creator.add_watermark("logo.png", position="top_right", opacity=0.8)
+
+# تصحيح الألوان
+creator.color_grade(preset="cinematic")
+creator.add_vignette(intensity=0.3)
+
+# التصدير بجودة عالية
+creator.export("output.mp4", quality="4k", fps=60, bitrate="20M")
+
+
+### جودة التصدير
+
+# جودة 4K
+creator.export("4k_video.mp4", resolution=(3840, 2160), fps=60)
+
+# جودة HD
+creator.export("hd_video.mp4", resolution=(1920, 1080), fps=30)
+
+# جودة متحركة
+creator.export("gif_output.gif", format="gif", fps=15)
+
+
+---
+
+## الأمثلة
+
+### مثال كامل: إنشاء فيديو إحترافي
+
+from video_editor import ProfessionalVideoCreator
+
+creator = ProfessionalVideoCreator()
+
+# تحميل المقاطع
+creator.load_clips([
+    "intro.mp4",
+    "main_content.mp4",
+    "outro.mp4"
+])
+
+# إضافة المؤثرات الاحترافية
+creator.apply_professional_effects(
+    transitions=True,
+    color_grading="cinematic",
+    stabilization=True,
+    noise_reduction=True
+)
+
+# إضافة العناصر الاحترافية
+creator.add_lower_third("العنوان", "الوصف")
+creator.add_intro_animation()
+creator.add_outro_animation()
+
+# إنشاء الفيديو النهائي
+creator.render("professional_video.mp4", preset="high_quality")
+
+
+---
+
+## المتطلبات
+- Python 3.8+
+- FFmpeg
+- OpenCV
+- MoviePy
+
+## الدعم
+للدعم الفني: support@videoeditorpro.com
+
+
+---
+## المساهمات
+نرحب بمساهماتكم! يرجى إنشاء pull request للمراجعة.

@@ -1,1 +1,16 @@
-2026-04-25 11:00:00,007 - Evolution step 2 executed
+SyntaxError detected in test.py:
+filename: test.py
+lineno: 1
+msg: '(' was never closed
+text: print("Hello"
+
+offset: 6
+end_lineno: 1
+
+Full traceback:
+Traceback (most recent call last):
+  File "<string>", line 20, in monitor_test_py
+  File "test.py", line 1
+    print("Hello"
+         ^
+SyntaxError: '(' was never closed

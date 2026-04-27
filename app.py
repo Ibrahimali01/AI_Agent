@@ -21,7 +21,7 @@ def get_sys_info():
             "mem_percent": round((used/total)*100, 1),
             "load_1": load[0], "load_5": load[1], "load_15": load[2]
         }
-    except:
+    except Exception:
         return {"error": "Could not read system data"}
 
 @app.route('/')
