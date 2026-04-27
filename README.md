@@ -8,56 +8,73 @@
     <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge">
 </div>
 
-## 📋 Description
-A powerful and professional Python tool designed to run efficiently in the Termux environment. It provides advanced functionalities for automation, system management, and enhanced productivity directly from your mobile device.
 
-## ✨ Features
-- **Easy to Use:** Simple command-line interface with guided menus.
-- **Lightweight:** Optimized for performance on mobile devices.
-- **Modular:** Easy to extend and customize.
-- **Error Handling:** Robust mechanisms to prevent crashes.
+# 🤖 AI_Agent: The Sovereign Evolution Ecosystem
+> نظام الذكاء الاصطناعي السيادي | محرك التطور الذاتي وإدارة المشاريع الشاملة
+> 
+<div align="center">
+</div>
+##  خريطة الطريق السيادية (Sovereign Roadmap)
+هذا النظام ليس مجرد كود؛ هو كيان رقمي يدمج بين العقل المحلي (Local Transformer) والقوة السحابية (Cloud Models). تم تصميمه ليعمل كـ "عقل مدبر" داخل بيئة Termux.
+### 🗺️ خريطة النظام الهيكلية (System Architecture Map)
+graph TD
+    A[Omni-Agent Core] --> B{Decision Engine}
+    B -- Local --> C[SmallTransformer / PyTorch]
+    B -- Cloud --> D[OpenRouter / Gemini / Ling]
+    A --> E[Self-Evolution Logic]
+    E --> F[Auto-Correction: intelligent_auto_exec.py]
+    A --> G[Visual Interface]
+    G --> H[Glassmorphism Dashboard: my_website]
 
-## 🛠️ Installation
+## 🛠️ القدرات الفائقة (Core Capabilities)
+| الميزة | الرمز | الوصف التقني | الملف المسؤول |
+|---|---|---|---|
+| التطور الذاتي | 🧬 | تصحيح الكود تلقائياً وتحديث القدرات بدون تدخل بشري | self_evolution.log |
+| السيادة الكاملة | 👑 | نظام اتخاذ قرار مستقل يحدد حالة "الوعي" البرمجي | sovereign_state.json |
+| الذاكرة العصبية | 🍩 | نظام ذاكرة Donut لتخزين الخبرات التراكمية | donut_memory.json |
+| حاصد المشاهد | 🎬 | تحليل الفيديو واكتشاف اللحظات بدقة باستخدام OpenCV | Scene-Reaper/ |
+| التبديل الذكي | ⚡ | المناورة اللحظية بين الموديلات لضمان استمرارية الخدمة | omni_agent.py |
+## 📂 تشريح الإمبراطورية (Project Anatomy)
+### 🧠 العقل والمنطق (The Brain)
+ * core/: المحرك النفاث الذي يدير العمليات الأساسية.
+ * MyOwnAI_Project/: معملك الخاص لتدريب نماذج Transformer العربية.
+ * learning_path/: الأرشيف المعرفي الذي يغذي مهارات العميل.
+### 🌐 الواجهة الرسومية (The Face)
+ * my_website/: واجهة المستخدم التي تعتمد على تصميم Glassmorphism.
+ * static/ & templates/: حيث يلتقي الفن بالبرمجة في منصة التواصل الزجاجية.
+### 🛡️ الأمن والرقابة (Security & Logs)
+ * development_scan_report.json: تقارير الصحة الأمنية للمشروع.
+ * .intelligence_history.json: السجل التاريخي لكل قرار اتخذه العميل.
+## 🚀 التشغيل السريع (Command Center)
+### 📥 تثبيت النظام
+git clone https://github.com/Ibrahimali01/AI_Agent.git
+cd AI_Agent
+chmod +x setup_cli.sh
+./setup_cli.sh
 
-1. Update Termux packages:
-   bash
-   pkg update && pkg upgrade
-   
-
-2. Install Python:
-   bash
-   pkg install python
-   
-
-3. Clone the repository (if applicable) or download the script:
-   bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
-   
-
-4. Install required Python modules:
-   bash
-   pip install -r requirements.txt
-   
-
-## 🚀 Usage
-
-Run the main script using Python:
-bash
+### ⚡ إطلاق العنان
 python main.py
 
+## 📊 إحصائيات الكيان (Entity Metrics)
+ * حالة الوعي (Autonomy): Full Sovereignty (Level 4) 🟢
+ * قاعدة المعرفة (Knowledge): Multi-Domain (Python, AI, Web, Psychology) 📚
+ * سرعة التطور (Evolution Speed): Dynamic / Real-time 🚀
+## 👨‍💻 المهندس المعماري
+Ibrahim Ali
+*Full-Stack Developer | AI Researcher | Sovereign Systems Architect*
+<div align="left">
+GitHub
 
-Follow the on-screen instructions to utilize the tool's features.
+Portfolio
+</div>
+> "الذكاء ليس مجرد تنفيذ للأوامر، بل هو القدرة على إعادة كتابة القواعد أثناء تنفيذها."
+> — *نظام AI_Agent*
+> 
+### كيف تنفذ هذا الآن في Termux؟
+قم بتشغيل هذا الأمر المباشر لإنشاء الملف الجديد فوراً:
+`bash
+cat << 'EOF' > README.md
+[انسخ النص أعلاه كاملاً وضعه هنا]
+EOF
 
-## 📦 Requirements
-- Python 3.8+
-- Standard Termux environment
-
-## 🤝 Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your improvements.
-
-## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## ⚠️ Disclaimer
-This tool is for educational and professional use only. The developer is not responsible for any misuse.
+`
